@@ -1,3 +1,9 @@
+/**
+*@author sebastiandemian
+*@class Keyboard
+*
+**/
+
 
 public class Keyboard {
 	
@@ -6,6 +12,12 @@ public class Keyboard {
 	public final String typeOfKeyboard = "";
 	public final Key a = new Key();
 
+
+/**
+*
+*@class Key
+*
+**/
 private class Key{
 	public String name = ""; //name of key
 	
@@ -29,6 +41,10 @@ private class Key{
 		public int lowerRightX; 
 		public int lowerRightY;
 	
+
+/**
+*@constructor
+**/
 	public Key(String name, int centerX, int centerY, int upperLeftX, int upperLeftY, int upperRightX, int upperRightY,
 			   int lowerLeftX, int lowerLeftY, int lowerRightX, int lowerRightY){
 		this.name = name;
@@ -43,7 +59,9 @@ private class Key{
 		this.lowerRightX = lowerRightX;
 		this.lowerRightY = lowerRightY;
 	}
-
+/**
+*@constructor (no args)
+**/
 	public Key() {
 		this.name = "";
 		this.centerX = 0;
